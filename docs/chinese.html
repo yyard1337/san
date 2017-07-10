@@ -1,5 +1,438 @@
-<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html class=no-js lang=zh-x-mtfrom-en><!--<![endif]--><head><script>(function(){(function(){function e(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(h){}};this.tick("start",null,a)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var f=0<d?new e(d):new e;window.jstiming={Timer:e,load:f};if(a){var c=a.navigationStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick("_wtsrt",void 0,c),b.tick("wtsrt_","_wtsrt",
-d),b.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick("_tbnd",void 0,window.chrome.csi().startE),b.tick("tbnd_","_tbnd",c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick("_tbnd",void 0,window.external.startE),b.tick("tbnd_","_tbnd",c))),a&&(window.jstiming.pt=a)}catch(g){}})();}).call(window);
-</script><script src="https://translate.googleusercontent.com/translate/releases/twsfe_w_20170626_RC01/r/js/translate_c.js"></script><script>_intlStrings._originalText = "Original English text:";_intlStrings._interfaceDirection="ltr";_intlStrings._interfaceAlign="left";_intlStrings._langpair="en|zh-CN";_intlStrings._feedbackUrl="https://translate.google.com/translate_suggestion";_intlStrings._currentBy="Current translation on %1$s by %2$s";_intlStrings._unknown="unknown";_intlStrings._suggestTranslation="Contribute a better translation"  ;_intlStrings._submit="Contribute";_intlStrings._suggestThanks="Thank you for contributing your translation suggestion to Google Translate.";_intlStrings._reverse=false;_intlStrings._staticContentPath="https://www.gstatic.com/translate/infowindow/";</script><style type="text/css">.google-src-text {display: none !important} .google-src-active-text {display: block!important;color:black!important; font-size:12px!important;font-family:arial,sans-serif!important}.google-src-active-text a {font-size:12px!important}.google-src-active-text a:link {color:#00c!important;text-decoration:underline!important}.google-src-active-text a:visited {color:purple!important;text-decoration:underline!important}.google-src-active-text a:active {color:red!important;text-decoration:underline!important}</style><meta http-equiv="X-Translated-By" content="Google"><link href=index.html hreflang=en rel="alternate machine-translated-from"><base href="" target=_top /><meta charset=utf-8><title> Contrib  - 分布式贡献图</title><meta name=description content="Contrib - A Distributed Contribution Graph"><meta name=author content="Francis Dierick"><meta name=viewport content="width=device-width, initial-scale=1"><link rel=stylesheet href=css/main.css><link rel=icon href=img/icons/favicon.ico><link rel=apple-touch-icon href=img/icons/apple-touch-icon-precomposed.png><script src=scripts/modernizr-2.6.2-respond-1.1.0.min.js></script></head><body class=dark-page data-spy=scroll data-target=.navscroll><iframe src="https://translate.google.com/translate_un?hl=en&prev=_t&sl=en&tl=zh-CN&lang=en&usg=ALkJrhjfceS35anGDEfphjWgERjoylwNNA" width=0 height=0 frameborder=0 style="width:0px;height:0px;border:0px;display:none;"></iframe><!-- preloader --><div id=loader-wrapper><div id=loader class=loader></div><p class="wow flash strong" data-wow-duration=2s data-wow-iteration=1000> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Loading...</span>载入中...</span> </p></div><!-- main wrapper --><div class=main-wrapper><!--[if lt IE 7]>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>SAN - Blockchain Contribution Graph</title>
+<meta name="description" content="SAN - A Blockchain Contribution Graph">
+<meta name="author" content="Francis Dierick">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="img/icons/favicon.ico">
+<link rel="apple-touch-icon" href="img/icons/apple-touch-icon-precomposed.png">
+
+<script src="scripts/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+
+<body class="dark-page" data-spy="scroll" data-target=".navscroll">
+
+
+
+<!-- main wrapper -->
+<div class="main-wrapper"> 
+	<!--[if lt IE 7]>
 				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-			<![endif]--><!-- main banner (slider area) --><section class=home id=home><h1> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><span class=texts><span>Contrib: a Distributed Contribution Graph</span></span></span> <span class=texts><span>对照：分布式贡献图</span></span></span> </h1><div class=container><div class=row><div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2"><div class="cta variant-two"><form id=downloadForm method=post action=scripts/download.php novalidate=novalidate><div class=input-group><input type=email placeholder="Your email address" id=downloadEmail name=email class="form-control input-xl"><div class=input-group-btn> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><button id=dLoad class="btn btn-primary btn-xl" type=submit><span class=hidden-xs>Keep me Updated</span></button></span> <button id=dLoad class="btn btn-primary btn-xl" type=submit><span class=hidden-xs>保持我更新</span></button></span> </div></div></form><div class=d-load-response id=dLoadResponse></div><center> <a title="这是一个示例视频标题。" href=https://translate.google.com/translate?hl=en&amp;prev=_t&amp;sl=en&amp;tl=zh-CN&amp;u=http://vimeo.com/63987795 class="btn btn-link btn-xl  lightbox"><i class="fa fa-play-circle" /></i></a> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><a title="这是一个示例视频标题。" href=https://translate.google.com/translate?hl=en&amp;prev=_t&amp;sl=en&amp;tl=zh-CN&amp;u=http://vimeo.com/63987795 class="btn btn-link btn-xl  lightbox">Video</a></span> <a title="这是一个示例视频标题。" href=https://translate.google.com/translate?hl=en&amp;prev=_t&amp;sl=en&amp;tl=zh-CN&amp;u=http://vimeo.com/63987795 class="btn btn-link btn-xl  lightbox">视频</a></span> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl"><i class="fa fa-file"></i></a> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl">Whitepaper</a></span> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl">白皮书</a></span> <a title="白皮书" href=https://translate.google.com/translate?hl=en&amp;prev=_t&amp;sl=en&amp;tl=zh-CN&amp;u=http://github.com/fdierick/contrib class="btn btn-link btn-xl"><i class="fa fa-github"></i></a> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><a title="白皮书" href=https://translate.google.com/translate?hl=en&amp;prev=_t&amp;sl=en&amp;tl=zh-CN&amp;u=http://github.com/fdierick/contrib class="btn btn-link btn-xl">Github</a></span> <a title="白皮书" href=https://translate.google.com/translate?hl=en&amp;prev=_t&amp;sl=en&amp;tl=zh-CN&amp;u=http://github.com/fdierick/contrib class="btn btn-link btn-xl">Github上</a></span> </center></div></div></div></div></section><!-- Stats --><section class="block gray-bg no-before facts" id=facts><div class=container><div class=row><div class=col-lg-12><h2 class="title-heading text-center"> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">ICO Stats</span> ICO统计</span> </h2><div class=row><div class="col-md-3 col-xs-6"><div class=stat-wrap><i class=pe-7s-users></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong class=blocked>Projects</strong> Registered</span> <strong class=blocked>项目</strong>注册</span> </p><h3 class="stat text-center" data-perc=321> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><span class=factor>0</span></span> <span class=factor>0</span></span> </h3></div></div><div class="col-md-3 col-xs-6"><div class="stat-wrap wow zoomIn" data-wow-delay=0.8s><i class=pe-7s-credit></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong class=blocked>Coins</strong> Available</span> <strong class=blocked>硬币</strong>可用</span> </p><h3 class="stat text-center" data-perc=1000000> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><span class=factor>0</span></span> <span class=factor>0</span></span> </h3></div></div><div class="col-md-3 col-xs-6"><div class="stat-wrap wow zoomIn" data-wow-delay=1s><i class=pe-7s-lock></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong class=blocked>Days</strong> Until Pre-Sale</span> <strong class=blocked>天，</strong>直到预售</span> </p><h3 class="stat text-center" data-perc=7> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><span class=factor>0</span></span> <span class=factor>0</span></span> </h3></div></div><div class="col-md-3 col-xs-6"><div class="stat-wrap wow zoomIn" data-wow-delay=1.2s><i class=pe-7s-global></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong class=blocked>Days</strong> Until ICO</span> <strong class=blocked>天，</strong>直到ICO</span> </p><h3 class="stat text-center" data-perc=8> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><span class=factor>0</span></span> <span class=factor>0</span></span> </h3></div></div></div></div></div></div></section><!-- main features section (tabs) --><section class="block black-bg no-before features" id=features><div class=container><div class=row><div class=col-lg-12><div role=tabpanel><!-- Nav tabs --><ul class="nav nav-tabs" role=tablist><li role=presentation class=active> <a href=#tabOne aria-controls=tabOne role=tab data-toggle=tab><i class=pe-7s-network></i></a> </li><li role=presentation> <a href=#tabTwo aria-controls=tabTwo role=tab data-toggle=tab><i class=pe-7s-graph1></i></a> </li><li role=presentation> <a href=#tabThree aria-controls=tabThree role=tab data-toggle=tab><i class=pe-7s-lock></i></a> </li><li role=presentation> <a href=#tabFour aria-controls=tabFour role=tab data-toggle=tab><i class=pe-7s-global></i></a> </li><li role=presentation> <a href=#tabFive aria-controls=tabFive role=tab data-toggle=tab><i class=pe-7s-user></i></a> </li></ul><!-- Tab panes --><div class=tab-content><div role=tabpanel class="tab-pane fade in active" id=tabOne><div class=row><div class=col-md-12><h2 class="title-heading text-center"> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Technology</span>技术</span> </h2><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Contrib aims to build a universal “Contribution Graph”: a verified, distributed &amp; immutable register of projects &amp; who contributed to them.</span> Contrib旨在建立一个通用的“贡献图”：一个经过验证的，分布式的和不可变的项目注册表，并为他们做出了贡献。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Such a system can answer the following question: Who contributed what, where?</span>这样的系统可以回答以下问题：谁贡献什么，在哪里？</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">eg “Linus Torvalds created the Linux Kernel” or “Brian Chesky co-founded AirBnB in 2008”.</span>例如“Linus Torvalds创建了Linux内核”或“Brian Chesky在2008年共同创立了AirBnB”。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Such a register can be of tremendous value to the creative professions in the Open Source and Startup communities.</span>这样一个登记册对于开放源代码社区和创业社区的创意专业来说可能是巨大的价值。</span> </p><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Such a graph can be used to assess a project contributor&#39;s reputation, assign a fair equity split in early projects or even automatically compensate team members for the work they have done.</span>这样的图表可用于评估项目贡献者的声誉，在早期项目中分配公平股权，甚至自动补偿团队成员进行的工作。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">There are 3 main components required to build such a graph: People, Roles &amp; Projects.</span>构建这样的图形需要3个主要组件：人物，角色和项目。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Roles (eg “CTO”, “Designer”, “Developer”) form the edges linking together People &amp; Project nodes in a graph.</span>角色（例如“CTO”，“Designer”，“开发人员”）形成了将图表中的“人物”和“项目”节点连接在一起的边缘。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Project &amp; Role descriptions are reached by voted consensus among the People participating in a project.</span>参与项目的人员通过投票协商达成项目和角色描述。</span> </p><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Blockchain technology offers a couple of interesting properties appropriate for a project like CONTRIB.</span> Blockchain技术提供了几个有趣的属性，适用于像CONTRIB这样的项目。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">The following are the core characteristics CONTRIB requires to work: IMMUTABILITY, TRANSPARENCY and DECENTRALISATION.</span>以下是CONTRIB要求工作的核心特征：不可执行性，透明度和分散性。</span> </p><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">IMMUTABILITY is achieved by storing Roles as contracts or transactions in the blockchain.</span>通过将角色作为合约或事务存储在块链中来实现不可实现性。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">TRANSPARENCY is achieved through a voting process to define project descriptions and roles: all project members need to agree for changes to be made.</span>透明度通过投票过程来实现，以定义项目描述和角色：所有项目成员需要同意进行更改。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">The blockchain transaction history serves as a transparent representation of how a consensus was reached.</span>块交易历史可以透明地表达如何达成共识。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">DECENTRALISATION of identity verification is desirable long-term and can be achieved through collaboration with projects like Civic.</span>身份验证的分散化是长期的，可以通过与像Civic这样的项目合作实现。</span> </p><p class=text-center> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl"><i class="fa fa-file"></i></a> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl">Read the full Whitepaper</a></span> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl">阅读完整的白皮书</a></span> </p></div></div></div><div role=tabpanel class="tab-pane fade" id=tabTwo><div class=row><div class=col-md-12><h2 class="title-heading text-center"> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Roadmap</span>路线图</span> </h2></div><div class=col-md-6><div class="text-block style2"><i class=pe-7s-user></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong>Early July 2017 : Ideation and Community Feedback</strong> We will present the draft whitepaper &amp; interact with the crypto community before finalising the final version that will be used for ICO.</span> <strong>早期的2017年7月：思维能力和社区反馈</strong>我们将介绍白皮书草案和与加密社区最终确定将被用于ICO最终版本之前进行互动。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">This will present an opportunity for the larger crypto community to shape how the contribution graph will be built and how the ICO will be handled.</span>这将为更大的加密社区提供一个机会，以形成如何构建贡献图，以及如何处理ICO。</span> </p></div><div class="text-block style2"><i class=pe-7s-global></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong>Q3 2017 : MVP, Pre-Registration, Pre-Sale and ICO</strong> An MVP of the web interface will be made available where users can pre-register their CONTRIB accounts at no cost.</span> <strong>2017年第三季度：Web</strong>界面的<strong>MVP，预先登记，售前和ICO</strong>的MVP将提供，用户可以在没有成本预先登记自己的contrib账户。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Per-Sale for larger buyers will be organised through a Slack channel.</span>大型买家的每次销售将通过Slack渠道进行组织。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">After Public ICO token holders will be able to formally claim their accounts &amp; use tokens to request formal IDV.</span>公共ICO令牌持有人将能够正式申领账户并使用令牌申请正式的IDV。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">In case of overfunding &gt; 10M USD a fund will be set up to subsidise IDV for key members of the open source community.</span>在资金超过1000万美元的情况下，将设立一个基金来为开源社区的主要成员补贴IDV。</span> </p></div><div class="text-block style2"><i class=pe-7s-look></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong>Q4 2017 : Identity Verification Launch</strong> Token holders will be able to request Identity Verification where their real-life &amp; project-related identity will be verified.</span> <strong>2017年第四季度：身份验证</strong>令牌<strong>启动</strong>持有人将可以要求身份验证，他们的现实生活与项目相关的身份将被验证。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">IDV services will be paid in CRT by token holders.</span> IDV服务将由CRT持有人支付。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">As a gesture to the Open Source community &amp; to increase the value of the initial CONTRIB network long-time Open Source contributors will be offered free IDV in case of ICO overfunding.</span>作为开源社区的姿态，为了提高初始CONTRIB网络的价值，长期以来的开放源代码贡献者将在ICO资金过剩的情况下提供免费的IDV。</span> </p></div></div><div class=col-md-6><div class="text-block style2"><i class=pe-7s-gleam></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong>Q1 2018 : Contrib Platform Launch</strong> The scope of the initial CONTRIB platform has been kept small on purpose &amp; continuous development will mainly consist of smart contracts that interact with the Contribution Graph.</span> <strong>Q1 2018：的Contrib平台推出</strong>初期的contrib平台的范围一直保持在目的和持续发展小会主要由与贡献图形交互智能合同。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Examples of potential applications are outlined in the “Further Research” section.</span>潜在应用的例子在“进一步研究”部分中概述。</span> </p></div><div class="text-block style2"><i class=pe-7s-monitor></i><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><strong>Q2 2018 : Continuous Development</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <strong>Q2 2018：持续发展</strong> Lorem存有悲坐阿梅德，consectetur adipiscing ELIT。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus.</span> Vivamus leo ante，consectetur sit amet vulopate vel，dapibus sit amet lectus。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Etiam varius dui eget lorem elementum eget mattis sapien interdum.</span> Etiam varius dui eget lorem elementum eget mattis sapien interdum。</span> </p></div></div><p class=text-center> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl "><i class="fa fa-file"></i></a> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl ">Read the full Whitepaper</a></span> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl ">阅读完整的白皮书</a></span> </p></div></div><div role=tabpanel class="tab-pane fade" id=tabThree><div class=row><div class=col-md-12><h2 class="title-heading text-center"> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Private Pre-Sale</span>私人预售</span> </h2><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">An invitation-only pre-sale event for large ticket investors will be held in the second week of July 2017. This will happen in an online chat channel and last 24h to give people from all timezones a chance.</span>大型机票投资者将在2017年7月的第二周举行仅限邀请的预售活动。这将在在线聊天频道和24小时内发生，让所有时区的人有机会。</span> </p><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">To participate in the pre-sale event send a non-refundable amount of BTC of your choice as a single transaction to the following address: 13doXnEThDYempx18DiL3HkqK3Lk5CnDrc</span>参加预售活动，将您选择的不可退还金额的BTC作为单笔交易发送到以下地址：13doXnEThDYempx18DiL3HkqK3Lk5CnDrc</span> </p><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Make sure you include they keyword &quot;contrib&quot; and your email address in the transaction details so we can contact you.</span>确保在交易详细信息中包含关键字“contrib”和您的电子邮件地址，以便我们与您联系。</span> </p><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">The order of pre-sale invitations and the discount will be based on the amount of BTC sent in the initial transaction.</span>预售邀请和折扣的订单将根据初始交易中发送的BTC的数量。</span> </p><p class=text-center> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl "><i class="fa fa-file"></i></a> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl ">Read the full Whitepaper</a></span> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl ">阅读完整的白皮书</a></span> </p></div></div></div><div role=tabpanel class="tab-pane fade" id=tabFour><h2 class="title-heading text-center"> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Public ICO</span>公共ICO</span> </h2><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">The Public ICO will start on July 14 2017. The ICO goal is to raise 1M USD, equivalent to a small startup seed-round.</span>公共ICO将于2017年7月14日开始。ICO的目标是提高1M美元，相当于一个小型的初创企业。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">The ticker symbol will be CRT and the coin will be a standard ECR20 token.</span>股票代号将是CRT，硬币将是标准的ECR20标记。</span> </p><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">The token is a utility token that people will use in the network to pay for initial identity verification and vote on project and role descriptions.</span>令牌是人们在网络中使用的实用令牌，用于支付初始身份验证并对项目和角色描述进行投票。</span> </p><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">The token will be tradable immediately after the ICO ends and usable in the CONTRIB network in Q4 2017.</span>令牌将在ICO结束后立即交易，并可在2017年第四季度在CONTRIB网络中使用。</span> </p><p class=text-center> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl"><i class="fa fa-file"></i></a> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl">Read the full Whitepaper</a></span> <a title="白皮书" href=./Whitepaper.pdf class="btn btn-link btn-xl">阅读完整的白皮书</a></span> </p></div><div role=tabpanel class="tab-pane fade" id=tabFive><div class=container><h2 class="title-heading text-center"> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Team</span>球队</span> </h2><div class=row><div class="col-sm-6 col-md-3"><div class=thumbnail><img src=img/thumbs/thumb1.jpg alt="通用占位符缩略图"><div class=caption><h3> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Francis Dierick</span>弗朗西斯·迪里克</span> </h3><p class=colored> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Founder / CTO</span>创始人/ CTO</span> </p><div class=social><ul><li> <a class=tip data-toggle=tooltip href=javascript:void(0); title="推特"><i class="fa fa-twitter"></i></a> </li><li> <a class=tip data-toggle=tooltip href=javascript:void(0); title="LinkedIn"><i class="fa fa-linkedin"></i></a> </li><li> <a class=tip data-toggle=tooltip href=javascript:void(0); title="Facebook的"><i class="fa fa-facebook"></i></a> </li></ul></div></div></div></div><div class="col-sm-6 col-md-3"><div class=thumbnail><img src=img/thumbs/thumb4.jpg alt="通用占位符缩略图"><div class=caption><h3> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">You?</span>您？</span> </h3><p class=colored> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">What can you bring?</span>你能带什么</span> </p><div class=social><ul><li> <a class=tip data-toggle=tooltip href=javascript:void(0); title="推特"><i class="fa fa-twitter"></i></a> </li><li> <a class=tip data-toggle=tooltip href=javascript:void(0); title="LinkedIn"><i class="fa fa-linkedin"></i></a> </li><li> <a class=tip data-toggle=tooltip href=javascript:void(0); title="Facebook的"><i class="fa fa-facebook"></i></a> </li></ul></div></div></div></div></div></div></div></div></div></div></div></div></section><!-- newsletter subscription --><section class="block gray-bg subscribe" id=subscribe><div class=container><h2 class="title-heading text-center"> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Nominate a Project</span>提名项目</span> </h2><div class=row><div class="col-lg-6 col-lg col-sm-8 col-lg-offset-3 col-sm-offset-2 text-center"><form class=subscribe-form action=scripts/subscribe.php method=post id=subscribeForm><div class=input-group><input class="form-control input-xl" type=url name=url id=subscribe_email placeholder="url, e.g. http://github.com/docker"><div class=input-group-btn> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><button type=submit class="btn btn-primary btn-xl" id=subSend><span class=hidden-xs>Nominate</span></button></span> <button type=submit class="btn btn-primary btn-xl" id=subSend><span class=hidden-xs>提名</span></button></span> <button type=submit class="btn btn-primary btn-xl" id=subSend><i class="pe-7s-paper-plane visible-xs"></i></button> </div></div></form><div class=sub-response id=subscriptionResponse></div><p> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Suggest a project you think is worth adding to the initial Contribution Graph.</span>建议您认为的项目值得添加到初始贡献图。</span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left">Projects can be startups or open source projects.</span>项目可以是初创公司或开源项目。</span> </p></div></div><hr class=ft-hr><div class=row><div class=col-md-12><div class=copyright><div class="copy-text text-center"> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><small>© 2017 Your Awesome Company |</small></span> <small>©2017 Your Awesome Company |</small></span> <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><small>All Rights Reserved</small></span> <small>版权所有</small></span> </div></div></div></div></div></section><!-- all javascript/jquery plugins --><script src=scripts/jquery.js></script><script src=scripts/bootstrap.js></script><script src=scripts/fitvids.js></script><script src=scripts/parallax.js></script><script src=scripts/nivo-lightbox.js></script><script src=scripts/retina.js></script><script src=scripts/appear.js></script><script src=scripts/wow.js></script><script src=scripts/validate.js></script><script src=scripts/form.js></script><script src=scripts/contact.js></script><script src=scripts/count-to.js></script><script src=scripts/owl.js></script><script src=scripts/smooth-scroll.js></script><script src=scripts/smoothscroll.min.js></script><script src=scripts/fittext.js></script><script src=scripts/lettering.js></script><script src=scripts/textillate.js></script><script src=scripts/scroll-to-top.js></script><script src=scripts/main.js></script></div></body><script>_addload(function(){_setupIW('com');_csi('en','zh-CN','index.html');});</script></html>
+			<![endif]-->
+			
+
+	
+	<!-- main banner (slider area) -->
+	<section class="home" id="home"> 
+
+		<h1>
+		<span class="texts">
+			<img src="btc.png" width="100" height="100">
+		</span>
+	</h1>
+	<h1>
+		<span class="texts">
+			<span>SAN: Blockchain Contribution Graph</span>
+		</span>
+	</h1>
+
+
+	
+
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 text-center">
+				<div class="cta variant-two">
+					
+
+
+
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background: transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//dierick.us2.list-manage.com/subscribe/post?u=d11e455c290ab0b504c711d1d&amp;id=dfd56e15b5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll" class="input-group">
+	<input type="hidden" value="asdf" name="TICKET" id="med-TICKET">
+	<input type="email" value="" name="EMAIL" class="form-control input-xl" id="mce-EMAIL" placeholder="Your email address" required>
+	 <div class="input-group-btn"><input type="submit" value="GO" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xl"></div>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d11e455c290ab0b504c711d1d_dfd56e15b5" tabindex="-1" value=""></div>
+   
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+
+
+					
+<a title="Video" href="http://vimeo.com/224837834" class="btn btn-link btn-xl lightbox"><i class="fa fa-play-circle"/></i> Video </a> 
+
+<a title="Whitepaper" href="./Whitepaper.pdf" class="btn btn-link btn-xl"> <i class="fa fa-file"></i> Whitepaper</a>
+
+ <a title="Github" href="http://github.com/fdierick/contrib" class="btn btn-link btn-xl"> <i class="fa fa-github"></i> Github</a> 
+
+  <a title="中文" href="chinese.html" class="btn btn-link btn-xl"> <i class="fa fa-flag"></i> 中文</a> 
+
+
+
+
+
+					</div>
+			</div>
+	</div>
+
+	</div>
+	</section>
+
+
+	<!-- Stats -->
+	<section class="block gray-bg no-before facts" id="facts">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+			<h2 class="title-heading text-center"> SanCoin (SAN) ICO : July 12th, at 8:00 P.M. (GMT+8)</h2>
+				<div class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="stat-wrap"> <i class="pe-7s-users"></i>
+							<p><strong class="blocked">Projects </strong> Registered</p>
+							<h3 class="stat text-center" data-perc="321"><span class="factor">0</span></h3>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="stat-wrap"> <i class="pe-7s-credit"></i>
+							<p><strong class="blocked">Coins </strong> Available</p>
+							<h3 class="stat text-center" data-perc="1000000"><span class="factor">0</span></h3>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="stat-wrap"> <i class="pe-7s-lock"></i>
+							<p><strong class="blocked">Days </strong> Until Pre-Sale</p>
+							<h3 class="stat text-center" data-perc="7"><span class="factor">0</span></h3>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="stat-wrap"> <i class="pe-7s-global"></i>
+							<p><strong class="blocked">Days </strong> Until ICO</p>
+							<h3 class="stat text-center" data-perc="8"><span class="factor">0</span></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+
+		<!-- main features section (tabs) -->
+	<section class="block black-bg no-before features" id="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div role="tabpanel"> 
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#tabOne" aria-controls="tabOne" role="tab" data-toggle="tab"><i class="pe-7s-network"></i></a></li>
+						<li role="presentation"><a href="#tabTwo" aria-controls="tabTwo" role="tab" data-toggle="tab"><i class="pe-7s-graph1"></i></a></li>
+						<li role="presentation"><a href="#tabThree" aria-controls="tabThree" role="tab" data-toggle="tab"><i class="pe-7s-global"></i></a></li>
+						<li role="presentation"><a href="#tabFour" aria-controls="tabFour" role="tab" data-toggle="tab"><i class="pe-7s-user"></i></a></li>
+
+					</ul>
+					
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="tabOne">
+							<div class="row">
+
+								<div class="col-md-12">
+									<h2 class="title-heading text-center">技术</h2>
+
+
+
+								</div>
+
+								<div class="col-md-6">
+
+
+									<p>SAN旨在建立一种通用的“贡献图表”：一个经过验证的，分散式的且不可变的项目注册表，也包括为之做出贡献的人。此类系统可以回答以下问题：谁做出了什么贡献，在哪里做出？例如“Linus Torvalds创建了Linux内核”或“Brian Chesky于2008年联合创立了AirBnB”。这种登记表在开放源代码和创业社区的创新行业中可谓是价值巨大。 </p>
+
+									<p>此类图表可用于评估项目贡献者的声誉，在早期项目中进行公允的股权分配，甚至根据团队成员的工作内容自动发放报酬。此类图表由3种主要组件构成：人物，角色和项目。角色（例如“首席技术官”，“设计人员”，“开发人员”）是图表中的连接点，将“人物”和“项目”两个节点连接在一起。参与项目的人员通过投票协商完成对项目和角色的描述。</p>
+
+									
+
+									
+
+								</div>
+
+
+								<div class="col-md-6">
+
+
+								<p>Blockchain技术提供了几个特别的属性，适用于像CONTRIB这样的项目。以下是SAN运转的核心特征：不变性，透明度和分散性。</p>
+
+									<p>将角色以合约或交易等形式存储在数据块链中，即可实现不变性。通过投票过程来定义项目描述和角色体现了透明度：需要所有项目成员同意后方可进行修改。数据块链的交易历史可以清晰的表现达成共识的过程。身份验证的分散化是长期的，可以通过与像Civic这样的项目合作来实现。</p>
+
+									
+
+								</div>
+
+
+								<div class="col-md-12">
+									
+									<p class="text-center"><a title="Whitepaper" href="./Whitepaper.pdf" class="btn btn-link btn-xl"> <i class="fa fa-file"></i> Read the full Whitepaper</a></p>
+
+
+
+								</div>
+
+
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tabTwo">
+							<div class="row">
+							
+
+							<div class="col-md-12">
+								<h2 class="title-heading text-center">Roadmap</h2>
+							</div>
+
+								<div class="col-md-6">
+
+									
+									<div class="text-block style2"> 
+										<p><strong>2017年7月初：</strong>strong> 构思与社群反馈  在敲定用于ICO的最终版本之前，我们将展示白皮书草案和与加密社群进行的交互。这将为更大的加密社群提供一个契机，用于塑造贡献图表建造的方式，以及处理ICO的方式。</p>
+									</div>
+									<div class="text-block style2"> 
+										<p><strong>2017年第三季度：</strong>模型-视图-表示器，预注册，预售与ICO  用户可以通过网页界面上的模型-视图-表示器免费预注册SAN帐户。将通过Slack渠道组织每次对大量购买者的销售。公开后，持有ICO令牌者可以正式申请账户并使用令牌申请正式的IDV。若资金超过1000万美元，将设立一个基金来为开源社区的主要成员发放IDV。</p>
+									</div>
+									
+
+
+									
+									
+								</div>
+
+								<div class="col-md-6">
+
+									<div class="text-block style2"> 
+										<p><strong>2017年第四季度：</strong> 启动身份验证  令牌持有人能够请求身份验证，身份验证验证的是现实身份与项目相关的身份。 令牌持有人将用CRT方式支付IDV服务款项。作为一个开放源代码社群，同时也为了提高初始SAN网络的价值，若ICO资金有剩余则为长期的开放源代码贡献者提供免费的IDV。</p>
+									</div>
+
+									
+									<div class="text-block style2"> 
+										<p><strong>2018年第一季度：</strong>SAN平台发布   SAN平台的初始发布范围一直在保持较小的范围内，持续开发主要由与Contribution Graph交互的智能合约构成。潜在的应用示例见“深入研究”一章。</p>
+									</div>
+
+									
+									
+								</div>
+
+
+																<div class="col-md-12">
+
+
+								<p class="text-center"><a title="Whitepaper" href="./Whitepaper.pdf" class="btn btn-link btn-xl "> <i class="fa fa-file"></i> Read the full Whitepaper</a></p>
+
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tabThree">
+							<div class="row">
+								<div class="col-md-12">
+								<h2 class="title-heading text-center">预售 &amp; ICO </h2>
+
+
+								</div>
+
+								<div class="col-md-6">
+
+								<p><strong>预售</strong>：将在2017年7月的第二周为大宗投资者举行仅限邀请参加的预售活动。活动将于在线聊天频道进行，持续24小时，确保每个时区的人都能参与 。</p>
+
+								<p>T预售活动的条件将通过电子邮件公布，因此您需要现在注册！</p>
+
+								<p>如果您想参加预售活动，您需要支付一笔比特币，且不可退还。</p>
+
+								<p>将根据初始预售交易中你支付的比特币数量确定预售邀请和折扣。</p>
+
+								<p>您被选中为预售投资者之后，您将收到关于操作方法的电子邮件说明。</p>
+
+								
+								</div>
+
+								<div class="col-md-6">
+
+								<p><strong>ICO</strong>：公开ICO将于2017年7月12日开始。ICO的目标是筹集1百万美元，相当于小型创业种子融资。代码符号是SAN，SanCoin令牌是标准的ECR20令牌。</p>
+
+								<p>令牌是人们在网络中使用的实用性令牌，用于支付初始身份验证并对项目和角色描述进行投票。</p>
+
+								<p>ICO结束后可以将令牌进行交易，并可在2017年第四季度在SAN网络中使用.</p>
+
+								<p class="text-center"><a title="Whitepaper" href="./Whitepaper.pdf" class="btn btn-link btn-xl"> <i class="fa fa-file"></i> Read the full Whitepaper</a></p>
+
+								
+
+						</div>
+
+							</div>
+						</div>
+
+
+						<div role="tabpanel" class="tab-pane fade" id="tabFour">
+
+								<div class="container">
+									<h2 class="title-heading text-center"> Team</h2>
+									<div class="row">
+										<div class="col-sm-6 col-md-3">
+											<div class="thumbnail"> <img src="img/thumbs/thumb1.jpg" alt="Generic placeholder thumbnail">
+												<div class="caption">
+													<h3>Francis Dierick</h3>
+													<p class="colored">Co-Founder / Development</p>
+													<div class="social">
+														<ul>
+															<li><a class="tip" data-toggle="tooltip" href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+															<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+															<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										
+										<div class="col-sm-6 col-md-3">
+											<div class="thumbnail"> <img src="img/thumbs/thumb2.jpg" alt="Generic placeholder thumbnail">
+												<div class="caption">
+													<h3>Jan Willems</h3>
+													<p class="colored">Co-Founder / Business</p>
+													<div class="social">
+														<ul>
+															<li><a class="tip" data-toggle="tooltip" href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+															<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+															<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-6 col-md-3">
+											<div class="thumbnail"> <img src="img/thumbs/thumb3.jpg" alt="Generic placeholder thumbnail">
+												<div class="caption">
+													<h3>Vidar Andersen</h3>
+													<p class="colored">Advisor</p>
+													<div class="social">
+														<ul>
+															<li><a class="tip" data-toggle="tooltip" href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+															<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+															<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-6 col-md-3">
+											<div class="thumbnail"> <img src="img/thumbs/thumb4.jpg" alt="Generic placeholder thumbnail">
+												<div class="caption">
+													<h3>Puja ???</h3>
+													<p class="colored">What'd ya think?</p>
+													<div class="social">
+														<ul>
+															<li><a class="tip" data-toggle="tooltip" href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+															<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+															<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										
+									</div>
+								</div>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+
+
+
+
+
+
+	<!-- newsletter subscription -->
+	<section class="block gray-bg subscribe" id="subscribe">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="copyright">
+					<div class="copy-text text-center"> 
+						<small>&copy; 2017 Francis Dierick | All Rights Reserved | Why SAN? 三角洲, sān jiǎo zhōu, river delta : what collaboration looks like. </small> 
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+	</section>
+
+	
+
+	
+
+
+
+
+<!-- all javascript/jquery plugins -->
+<script src="scripts/jquery.js"></script> 
+<script src="scripts/bootstrap.js"></script> 
+<script src="scripts/fitvids.js"></script> 
+<script src="scripts/parallax.js"></script> 
+<script src="scripts/nivo-lightbox.js"></script> 
+<script src="scripts/retina.js"></script> 
+<script src="scripts/appear.js"></script> 
+<script src="scripts/wow.js"></script> 
+<script src="scripts/validate.js"></script> 
+<script src="scripts/form.js"></script> 
+<script src="scripts/contact.js"></script> 
+<script src="scripts/count-to.js"></script> 
+<script src="scripts/owl.js"></script> 
+<script src="scripts/smooth-scroll.js"></script> 
+<script src="scripts/smoothscroll.min.js"></script> 
+<script src="scripts/fittext.js"></script> 
+<script src="scripts/lettering.js"></script> 
+<script src="scripts/textillate.js"></script> 
+<script src="scripts/scroll-to-top.js"></script> 
+<script src="scripts/main.js"></script>
+</div>
+</body>
+</html>
