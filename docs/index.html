@@ -51,17 +51,9 @@
 	<div class="row">
 	<div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 text-center">
 				<div class="cta variant-two">
-					<form id="downloadForm" method="post" action="scripts/download.php" novalidate="novalidate">
-						<div class="input-group">
-							<input type="email" placeholder="Your email address" id="downloadEmail" name="email" class="form-control input-xl">
-							<div class="input-group-btn">
-								<button id="dLoad" class="btn btn-primary btn-xl" type="submit"> GO</button>
-							</div>
-						</div>
-					</form>
+					
 
 
-<hr>
 
 
 <!-- Begin MailChimp Signup Form -->
@@ -71,14 +63,15 @@
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
-<div id="mc_embed_signup">
+<div id="mc_embed_signup" style="background-color: transparent;">
 <form action="//dierick.us2.list-manage.com/subscribe/post?u=d11e455c290ab0b504c711d1d&amp;id=dfd56e15b5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
+    <div id="mc_embed_signup_scroll" class="input-group">
 	
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	<input type="email" value="" name="EMAIL" class="email form-control input-xl" id="mce-EMAIL" placeholder="Your email address" required>
+	 <div class="input-group-btn"><input type="submit" value="GO" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xl"></div>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d11e455c290ab0b504c711d1d_dfd56e15b5" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   
     </div>
 </form>
 </div>
@@ -86,7 +79,6 @@
 <!--End mc_embed_signup-->
 
 
-<hr>
 
 
 
