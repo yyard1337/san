@@ -1,6 +1,11 @@
 $(window).load(function(){
 	"use strict";
 	
+
+
+
+    var num = Math.floor(1 + (Math.random() * Math.pow(10, gRandLength)));
+    $('#med-TICKET').val(num);
 	
 	//preloader animation
 	$('#loader-wrapper').delay(300).fadeOut('slow');
