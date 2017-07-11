@@ -9,6 +9,7 @@ $(window).load(function(){
 	var ticket = randomString(32, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
     $('#med-TICKET').val(ticket);
+
 	
 	//preloader animation
 	$('#loader-wrapper').delay(300).fadeOut('slow');
