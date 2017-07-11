@@ -1,11 +1,14 @@
 $(window).load(function(){
 	"use strict";
 	
+	function randomString(length, chars) {
+	    var result = '';
+	    for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+	    return result;
+	}
+	var ticket = randomString(32, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
-
-
-    var num = Math.floor(1 + (Math.random() * Math.pow(10, gRandLength)));
-    $('#med-TICKET').val(num);
+    $('#med-TICKET').val(ticket);
 	
 	//preloader animation
 	$('#loader-wrapper').delay(300).fadeOut('slow');
