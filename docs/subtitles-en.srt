@@ -1,0 +1,42 @@
+1
+00:00:03,500 --> 00:00:06,500
+SAN: Blockchain Contribution Graph
+
+2
+00:00:07,500 --> 00:00:14,000
+Jake, John & Mary are creatives. 
+Jake is a coder, John is a designer & Mary does marketing.
+
+3
+00:00:14,500 --> 00:00:20,500
+They start working together on a project. 
+That project turns into a successful startup.
+
+4
+00:00:21,500 --> 00:00:28,000
+Now they need to decide how to split the profits. 
+They end up fighting and hating each other. Sad ending.
+
+5
+00:00:29,000 --> 00:00:34,000
+What if there was a simple way to agree on a fair profit share
+WITHOUT the legal hassle of incorporation?
+
+6
+00:00:35,000 --> 00:00:41,000
+SAN uses blockchain technology to help contributors 
+decide on a fair split in creative projects BEFORE they start.
+
+7
+00:00:42,000 --> 00:00:49,000
+But projects change: people come & go. 
+No problem: contributors can update the split by voting.
+
+8
+00:00:50,000 --> 00:00:58,000
+SAN helps you answer the question “Who contributed what, where?”. 
+In a transparent and distributed way. Happy Ending!
+
+9
+00:01:01,000 --> 00:01:04,000
+SAN: Blockchain Contribution Graph
